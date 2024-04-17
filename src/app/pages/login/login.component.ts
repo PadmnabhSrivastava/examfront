@@ -23,6 +23,8 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {}
 
+
+  //login password validation in frontend
   formSubmit() {
     console.log('login btn clicked');
 
@@ -68,7 +70,7 @@ export class LoginComponent implements OnInit {
           } else if (this.login.getUserRole() == 'NORMAL') {
             //normal user dashbaord
             // window.location.href = '/user-dashboard';
-            this.router.navigate(['user-dashboard/0']);
+            this.router.navigate(['user-dashboard']);
             this.login.loginStatusSubject.next(true);
           } else {
             this.login.logout();

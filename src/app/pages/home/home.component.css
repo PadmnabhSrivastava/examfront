@@ -1,0 +1,64 @@
+/* home.component.css */
+
+
+.feature img {
+    width: 300px; /*  width as needed */
+    height: 150px; /*  height as needed */
+    object-fit: cover; /* or contain, fill, etc. depending on your preference */
+    display: block; /* Ensures proper alignment */
+    margin: 0 auto; /* Centers the image horizontally */
+  }
+  
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .hero-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .features-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 10px;
+  }
+  
+  .feature {
+    text-align: left;
+    padding: 80px;
+  }
+
+  
+  .feature h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  

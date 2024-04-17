@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh; /* Adjust the height to fit your needs */
+    margin-top: 20vh; /* Adjust the top margin to position the container closer to the top */
+}
+
+h1 {
+    font-size: 3em; /* Adjust the font size as needed */
+    color: #333; /* Adjust the color */
+    font-family: 'Arial', sans-serif; /* Choose a suitable font family */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle text shadow */
+}

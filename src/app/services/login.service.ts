@@ -22,6 +22,9 @@ export class LoginService {
     return this.http.post(`${baseUrl}/generate-token`, loginData);
   }
 
+  //if token is stored in the local storege then it means the user 
+  //is logged in else we remove it and user is logged out 
+
   //login user: set token in localStorage
   public loginUser(token) {
     localStorage.setItem('token', token);
@@ -46,7 +49,7 @@ export class LoginService {
     return true;
   }
 
-  //get token
+  //get token (it will fetch the token from the local storage variable localStorage)
   public getToken() {
     return localStorage.getItem('token');
   }

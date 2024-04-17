@@ -14,8 +14,18 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
 
 import { FormsModule } from '@angular/forms';
+import { authInterceptorProviders } from './services/auth.interceptor';
+import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
+import { UserDashboardComponent } from './pages/user/user-dashboard/user-dashboard.component';
+import { MatListModule } from '@angular/material/list';
+import { SidebarComponent } from './pages/admin/sidebar/sidebar.component';
+import { WelcomeComponent } from './pages/admin/welcome/welcome.component';
+import { CommonModule } from '@angular/common';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +34,11 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     SignupComponent,
     LoginComponent,
+    DashboardComponent,
+    UserDashboardComponent,
+    SidebarComponent,
+    WelcomeComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,9 +51,12 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     MatCardModule,
     MatSnackBarModule,
-    
+    MatToolbarModule,
+    MatIconModule,
+    MatListModule,
+    CommonModule,
   ],
-  providers: [],
+  providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
