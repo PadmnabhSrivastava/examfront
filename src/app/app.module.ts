@@ -26,6 +26,10 @@ import { SidebarComponent } from './pages/admin/sidebar/sidebar.component';
 import { WelcomeComponent } from './pages/admin/welcome/welcome.component';
 import { CommonModule } from '@angular/common';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { ViewCategoriesComponent } from './pages/admin/view-categories/view-categories.component';
+import { AddCategoryComponent } from './pages/admin/add-category/add-category.component';
+import { ViewQuizzesComponent } from './pages/admin/view-quizzes/view-quizzes.component';
+import { AddQuizComponent } from './pages/admin/add-quiz/add-quiz.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +43,10 @@ import { ProfileComponent } from './pages/profile/profile.component';
     SidebarComponent,
     WelcomeComponent,
     ProfileComponent,
+    ViewCategoriesComponent,
+    AddCategoryComponent,
+    ViewQuizzesComponent,
+    AddQuizComponent,
   ],
   imports: [
     BrowserModule,
